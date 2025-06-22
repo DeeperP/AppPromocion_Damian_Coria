@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="201dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/fondo_redondeado"
+            android:onClick="irAFiguras"
+            android:text="Ver Figuras"
+            android:textColor="#FDFDFD"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="201dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/fondo_redondeado"
+            android:onClick="irADibujo"
+            android:text="Dibujar"
+            android:textColor="#FBFBFB"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="240dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/figuras_sin_fondo" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="199dp"
+            android:layout_height="128dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/sin_fondo_lapiz" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
